@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="sky">#4169e1</color>
+    <color name="forest">#006400</color>
+    <color name="earth">#8b4513</color>
 </resources>
