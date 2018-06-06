@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'Cu63.54601'
+            storeFile file('/home/amcintosh/AndroidStudioProjects/keystore.jks')
+            storePassword 'Cu63.54601'
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "us.tx.austin.vima.bte.myfirstapplication"

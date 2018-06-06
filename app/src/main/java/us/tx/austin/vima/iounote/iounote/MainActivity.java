@@ -1,4 +1,4 @@
-package us.tx.austin.vima.bte.myfirstapplication;
+package us.tx.austin.vima.iounote.iounote;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import us.tx.austin.vima.iounote.iounote.DisplayMessageActivity;
 
 public class MainActivity extends AppCompatActivity {
 
