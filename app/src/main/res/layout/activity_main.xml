@@ -10,37 +10,80 @@
         android:id="@+id/sample_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/button_hello"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_r"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/button_r" />
 
     <EditText
+        android:hint="@string/button_about"
         android:id="@+id/editText"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/edit_message"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_a"
+        app:layout_constraintStart_toEndOf="@+id/button_a"
+        app:layout_constraintStart_toStartOf="@+id/sample_text" />
+
+    <Button
+        android:id="@+id/button_i"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/edit_message"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:onClick="sendMessage"
+        android:text="@string/button_inventory"
+        android:textColor="@color/sky"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="sendMessage"
+        android:text="@string/button_request"
+        android:textColor="@color/forest"
+        app:layout_constraintBottom_toTopOf="@+id/button_a"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="sendMessage"
+        android:text="@string/button_about"
+        android:textColor="@color/earth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:onClick="sendMessage"
+        android:text="@string/button_mine"
+        android:textColor="@color/sky"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_i"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
         android:onClick="sendMessage"
         android:text="@string/button_send"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editText" />
+        android:textColor="@color/forest"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_r"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
